@@ -1,28 +1,28 @@
 {
-   "token": "",
-   "prefix": "t!",
+   "token":"OTM2MjkxODg5NzU2Mzc3MTQw.YfLDxQ.YxjH4-HGEkqZO-zUSxOKE9QFhgA",
+   "prefix": "x/",
    "ownerIDS": [
-      "442355791412854784"
+      "577758217774301215"
    ],
-   "memer_api": "get it from: https://discord.gg/Mc2FudJkgP",
+   "memer_api": "uTv6DvGrHq3",
    "status": {
-      "text": "{prefix}help | milrato.eu",
-      "text2": "by: discord.gg/milrato",
+      "text": "XENON PAPA PLAYZ KA",
+      "text2": "XENON PAPA INF KA",
       "type": "PLAYING",
       "url": "https://twitch.tv/milratoDiscordBot"
    },
    "clientsettings": {
       "nodes": [
          {
-            "host": "localhost",
+            "host": "node06.lavalink.eu",
             "port": 2333,
-            "password": "youshallnotpass"
+            "password": "Raccoon"
          }
       ]
    },
    "spotify": {
-      "clientSecret": "",
-      "clientID": ""
+      "clientSecret": "053469ffeb3844079fab734ebf3090c2",
+      "clientID": "bf5ee2a72bae40ffadc71a47280e5ff9"
    },
    "settings": {
       "leaveOnEmpty_Channel": {

@@ -119,7 +119,7 @@ module.exports = {
         let button_back = new MessageButton().setStyle('SUCCESS').setCustomId('1').setEmoji("833802907509719130").setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.back))
         let button_home = new MessageButton().setStyle('DANGER').setCustomId('2').setEmoji("🏠").setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.home))
         let button_forward = new MessageButton().setStyle('SUCCESS').setCustomId('3').setEmoji('832598861813776394').setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.forward))        
-        let button_tutorial = new MessageButton().setStyle('LINK').setEmoji("840260133686870036").setLabel("Tutorial").setURL("https://youtu.be/E0R7d8gS908")
+        let button_tutorial = new MessageButton().setStyle('LINK').setEmoji("840260133686870036").setLabel("Tutorial").setURL("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         let menuOptions = [
           {
             label: "Overview",
@@ -270,9 +270,9 @@ module.exports = {
         .setFooter("Page Overview\n"+ client.user.username, client.user.displayAvatarURL())
         .setTitle(`Information about __${client.user.username}__`)
         .addField(":muscle: **__My Features__**",
-`>>> **58+ Systems**, like: <:twitter:840255600851812393> **Twitter-** & <:Youtube:840260133686870036> **Youtube-Auto-Poster** 
+`>>> **58+ Systems**, like: <:twitter:936622626426716232> **Twitter-** & <:Youtube:936622723336126556> **Youtube Notification** 
 **Application-**, Ticket-, **Welcome-Images-** and Reaction Role-, ... Systems
-:notes: An advanced <:Spotify:846090652231663647> **Music System** with **Audio Filtering**
+:notes: An advanced <:Spotify:936622877225156648> **Music System** with **Audio Filtering**
 :video_game: Many **Minigames** and :joystick: **Fun** Commands (150+)
 :no_entry_sign: **Administration** and **Auto-Moderation** and way much more!`)
         .addField(":question: **__How do you use me?__**",
@@ -283,21 +283,19 @@ but you can also do \`${prefix}setup-SYSTEM\` e.g. \`${prefix}setup-welcome\``)
 :file_folder: on **${client.guilds.cache.size} Guilds**
 ⌚️ **${duration(client.uptime).map(i=> `\`${i}\``).join("︲")} Uptime**
 📶 **\`${Math.floor(client.ws.ping)}ms\` Ping**
-<:MilratoDevelopment:900389724936609842>  Made by [**Milrato Development**](https://discord.gg/milrato)`)
-.addField("How to get help?", `>>> **\` 1. Way \`** *Use the Buttons, to swap the Pages*\n**\` 2. Way \`** *Use the Menu to select all Help Pages, you want to display*\n**\` 3. Way \`** *Watch the Youtube Tutorial*`)
+  Made by [**XenonYT**](https://discord.gg/VVGuuwWx)`)
+.addField("How to get help?", `>>> **\` 1. Way \`** *Use the Buttons, to swap the Pages*\n**\` 2. Way \`** *Use the Menu to select all Help Pages, you want to display*\n**\` 3. Way \`** *Xenon Se Puchle gandu tere se naah hoga*`)
 
-        let err = false;
+       
         //Send message with buttons
         let helpmsg = await message.reply({   
             content: `***Click on the __Buttons__ to swap the Help-Pages***`,
             embeds: [OverviewEmbed], 
             components: allbuttons
         }).catch(e=>{
-          err = true;
           console.log(e.stack ? String(e.stack).grey : String(e).grey)
           return message.reply(`:x: I couldn't send help? Maybe I am missing the Permission to **EMBED LINKS**`).catch(() => {})
         });
-        if(err) return;
         var edited = false;
         var embeds = [OverviewEmbed]
         for(const e of allotherembeds_eachcategory(true))
@@ -471,7 +469,7 @@ but you can also do \`${prefix}setup-SYSTEM\` e.g. \`${prefix}setup-welcome\``)
             .addField("\u200b", "__**Sub-Categorized Commands:**__")
             .addField("😛 **Setups for Entertainment**", "> "+client.commands.filter((cmd) => cmd.category === "💪 Setup" && cmd.type.includes("fun")).sort((a,b) => a.name.localeCompare(b?.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
             .addField("💡 **Information & Manage (Bot/Server) Settings**", "> "+client.commands.filter((cmd) => cmd.category === "💪 Setup" && cmd.type.includes("info")).sort((a,b) => a.name.localeCompare(b?.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
-            .addField("<:MilratoDevelopment:900389724936609842> **Most used Systems**", "> "+client.commands.filter((cmd) => cmd.category === "💪 Setup" && cmd.type.includes("system")).sort((a,b) => a.name.localeCompare(b?.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
+            .addField("<a:verified:936621495491391569> **Most used Systems**", "> "+client.commands.filter((cmd) => cmd.category === "💪 Setup" && cmd.type.includes("system")).sort((a,b) => a.name.localeCompare(b?.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
             .addField("<:Builder:866089513654419466> **Security Systems**", "> "+client.commands.filter((cmd) => cmd.category === "💪 Setup" && cmd.type.includes("security")).sort((a,b) => a.name.localeCompare(b?.name)).map((cmd) => `\`${cmd.name}\``).join("︲"))
           embeds.push(embed7)
           
