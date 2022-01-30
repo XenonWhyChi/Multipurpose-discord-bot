@@ -58,7 +58,7 @@
     "type": "git",
     "url": "git+https://github.com/Tomato6966/Multipurpose-discord-bot"
   },
-  "engines":{,
+  "engines":{
     "node" : ">=16.6.0"
   },
 
